@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, width=180, target-densitydpi=device-dpi">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/common_functions.js"></script>
+  <script src="js/index_functions.js"></script>
+</head>
+<body>
+  <form class="form" id="search_form" action="searchResult.html" method="get" onsubmit="return check();">
+    <input type="text" name="q" class="input">
+    <button type="submit" class="button">Search</button>
+  </form>
+  <a href="config.html">config画面へ</a>
+  <a href="log.html">履歴</a>
+  <script type="riot/tag" src="tag/songContent.tag"></script>
+  <script src="libs/riot+compiler.min.js"></script>
+</body>
+</html>

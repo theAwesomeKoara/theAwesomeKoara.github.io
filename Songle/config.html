@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Config</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+
+  <script src="cordova.js"></script>
+  <script src="js/common_functions.js"></script>
+  <script src="js/config_functions.js"></script>
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <p>使用するタイルを赤く光っている状態で踏んでください</p>
+  <p>タイルの色が青になったらそのタイルは認証成功です</p>
+  <br>
+  <p>以前のタイル設定（使用するタイルのid）</p>
+  <div class="display configDisplay" id="config_before"></div>
+  <p>今回設定するタイル設定（使用するタイルのid）</p>
+  <div class="display configDisplay" id="config_after"></div>
+  <p><a id="config_save" href="" onclick="saveConfig();">configを保存</a></p>
+</body>
+</html>

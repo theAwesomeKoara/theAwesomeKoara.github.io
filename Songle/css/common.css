@@ -1,0 +1,35 @@
+body{
+  font-size: 13px;
+}
+
+.form{
+
+}
+
+.options{
+  overflow: hidden;
+  margin: 10px 0px 10px 0px;
+  border-bottom: #aaaaaa solid 3px;
+  display: inline-block;
+}
+
+.option{
+  float: left;
+  padding: 0px 10px 0px 10px;
+  user-select: none;
+  touch-callout: none;
+}
+
+.option_active{
+  background-color: #aaaaaa;
+}
+
+.display{
+  overflow-y: scroll;
+  height: 400px;
+  border: #000000 solid 1px;
+}
+
+.configDisplay{
+  height: 100px;
+}
