@@ -62,5 +62,5 @@ function draw() {
 }
 
 function mousePressed(){
-  songleWidget.play();
+  //songleWidget.play();
 }
