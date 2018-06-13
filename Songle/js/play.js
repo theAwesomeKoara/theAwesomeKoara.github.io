@@ -35,6 +35,24 @@ window.onload=function(){
   document.getElementById("widget").appendChild(songleWidgetElement);
 }
 
+window.onSongleWidgetCreate =
+function(apiKey, songleWidget)
+{
+  console.log("status: " + songleWidget.status);
+}
+
+window.onSongleWidgetError =
+function(apiKey, songleWidget)
+{
+  console.log("status: " + songleWidget.status);
+}
+
+window.onSongleWidgetReload =
+function(apiKey, songleWidget)
+{
+  console.log("Songle Widget was reloaded!!");
+}
+
 //--
 
 window.onSongleWidgetReady=function(_api,_songleWidget){
