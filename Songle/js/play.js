@@ -8,17 +8,17 @@ let position=0;
 let tiles=[];
 /*
 tile={
-  id/int,
-  topNote/note
+id/int,
+topNote/note
 }
 */
 
 let notes=[];
 /*
 note={
-  start/int,
-  targetTile/tile,
-  state/String
+start/int,
+targetTile/tile,
+state/String
 }
 */
 
@@ -37,14 +37,11 @@ window.onload=function(){
 
 //--
 
-  window.onSongleWidgetReady=function(_api,_songleWidget){
-    songleWidget=_songleWidget;
-    songleWidget.play();
-    console.log("dfsa");
-
-    generateNotes();
+window.onSongleWidgetReady=function(_api,_songleWidget){
+  songleWidget=_songleWidget;
+  songleWidget.play();
+  console.log("dfsa");
 }
-
 //---------------------------------------------------------
 
 //view部分
