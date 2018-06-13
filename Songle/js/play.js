@@ -37,41 +37,13 @@ window.onload=function(){
 
 //--
 
-document.addEventListener("deviceready",function(){
-  let useTileIds=JSON.parse(window.localStorage.getItem("useTileIds"));
-  for (tileId of useTileIds) {
-    let tile={
-      id: tileId,
-      topNote: null
-    };
-    tiles.push(tile);
-  }
-
-  cordova.plugins.moto.setAllTilesColor("off",false,false);
-  cordova.plugins.moto.setAntPressEvent(function(tileId){
-    //タイルを踏んだ際毎回判定を行う
-    let tile=tiles.find(tile=>tile.id==tileId);
-    if(tile!=undefined){
-      doJudgeOf(tile);
-    }
-  },false);
-
-  //--
-
   window.onSongleWidgetReady=function(_api,_songleWidget){
     songleWidget=_songleWidget;
     songleWidget.play();
     console.log("dfsa");
 
     generateNotes();
-
-    //ループ
-    /*setInterval(function(){
-      if(songleWidget.position!=null)position=songleWidget.position;
-      stepNotesAndTiles();
-    },1);*/
-  }
-});
+}
 
 //---------------------------------------------------------
 
