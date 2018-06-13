@@ -61,6 +61,7 @@ document.addEventListener("deviceready",function(){
   window.onSongleWidgetReady=function(_api,_songleWidget){
     songleWidget=_songleWidget;
     songleWidget.play();
+    console.log("dfsa");
 
     generateNotes();
 
